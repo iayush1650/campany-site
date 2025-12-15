@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f9fbfd;
+    color: #1f2933;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* LEFT CONTENT */
+.hero-content {
+    flex: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 36px;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 15px;
+    max-width: 520px;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 35px 0;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.info-box p,
+.info-box ul {
+    font-size: 15px;
+    color: #4b5563;
+}
+
+.info-box ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+/* OFFER SECTION */
+.offer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.offer h3 span {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.offer ul li {
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* TAGLINE */
+.tagline {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #1d4ed8;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .description {
+        margin: auto;
+    }
+}
+
+
+.navbar {
+  background: var(--white);
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 26px;
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.logo img {
+    height: 80px;        /* control logo size */
+    width: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}

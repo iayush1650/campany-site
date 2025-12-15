@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--white);
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 26px;
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    max-width: 480px;
+    color: #475569;
+    font-size: 16px;
+}
+
+.hero-img img {
+    width: 380px;
+}
+
+/* OPENINGS */
+.openings {
+    padding: 60px 8%;
+}
+
+.openings h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.job-card h3 {
+    font-size: 20px;
+}
+
+.type {
+    color: #64748b;
+    margin: 5px 0;
+}
+
+.location {
+    margin: 10px 0 20px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.details-btn {
+    flex: 1;
+    background: #e5edff;
+    color: #2563eb;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.apply-btn {
+    flex: 1;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* WHY JOIN */
+.why {
+    padding: 60px 8%;
+    background: #ffffff;
+}
+
+.why h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.why-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.why-card h3 {
+    margin: 15px 0 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        margin-top: 40px;
+        width: 300px;
+    }
+}
+
+
+.apply-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 80px;        /* control logo size */
+    width: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
